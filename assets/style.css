@@ -22,6 +22,11 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
 }
 
 /* 6. Improve media defaults */
@@ -55,30 +60,182 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* CSS STYLE SHEET */
-
+/* ===================== */
+/* CABEÇALHO */
 .cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: space-between; /* atualizado p/ espaço entre logo e menus */
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-nav {
+    border: 1px solid #ccd6dd;
+    border-radius: 20px;;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .logo {
-    color: red;
+    color: #FF385C; /* cor padrão airbnb */
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 200px;
 }
 
 #logo-image {
-    height: 20%;
+    height: 24px;
 }
 
-.lista{
+.nav-menu {
+  margin-right: 200px;
+}
+
+.lista {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 1rem;
 }
+
+.lista a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.lista a:hover {
+    color: #FF385C;
+}
+
+/* ===================== */
+/* MAIN COM DUAS COLUNAS (conteúdo + reserva) */
+main {
+    max-width: 1600px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    display: grid;
+    
+}
+
+
+.reserva-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    height: fit-content;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    background: #fff;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espaço entre galeria e descrição */
+}
+
+
+/* ===================== */
+/* TITULOS */
+h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* ===================== */
+/* GALERIA DE IMAGENS */
+.galeria {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* primeira imagem em destaque maior */
+.galeria img:first-child {
+    grid-row: span 2;
+    grid-column: 1;
+}
+/* ===================== */
+/* DESCRIÇÃO E DETALHES */
+.descricao{
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+
+.detalhes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.detalhes li {
+    margin-bottom: 5px;
+}
+
+/* ===================== */
+/* CAIXA DE RESERVA */
+.reserva-box .preco {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.reserva-box form {
+    margin-bottom: 10px;
+}
+
+.reserva-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.reserva-box button {
+    width: 100%;
+    padding: 12px;
+    background: #FF385C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reserva-box button:hover {
+    background: #e03050;
+}
+
+.reserva-box .avaliacoes {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+

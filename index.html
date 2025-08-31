@@ -10,52 +10,61 @@
 
     <header>
         <div class="cabecalho">
-            <a href="index.html" class="logo">
+            <a class="logo">
                 <img src="./assets/imgs/images.png" alt="Logo AirBnB" id="logo-image">airbnb
             </a>
             <nav class="main-nav">
                 <ul class="lista">
-                    <li>
-                        <img src="" alt="Imagem de Casa Nav Bar">
-                    </li>
-                    <li>
-                        <a href="">Qualquer Lugar</a>
-                    </li>
-                    <li>
-                        <a href="">Qualquer Semana</a>
-                    </li>
-                    <li>
-                        <a href="">Hóspedes?</a>
-                    </li>
-                    <li>
-                        <a href=""><img src="" alt="Icone Buscar"></a>
-                    </li>
+                    <li><a href="">Qualquer Lugar</a></li>
+                    <li><a href="">Qualquer Semana</a></li>
+                    <li><a href="">Hóspedes?</a></li>
                 </ul>
             </nav>
             <div class="nav-menu">
                 <ul class="lista">
-                    <li>
-                        <a href="">Torne-se um anfitrião</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <!-- Menu Hamburguer -->
-                         <a href=""></a>
-                    </li>
+                    <li><a href="">Torne-se um anfitrião</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <main>
+<main>
+    <div class="título-imovel">
+        <h1>Studio Bauhaus (50 metros da praia)</h1>
+    </div>
+    <div class="conteudo">
+        <!-- Galeria -->
+        <div class="galeria">
+            <img src="./assets/imgs/princ.png" alt="Foto do quarto principal">
+            <img src="./assets/imgs/image3.png" alt="Foto quarto">
+            <img src="./assets/imgs/image5.png" alt="Foto da cozinha">
+            <img src="./assets/imgs/image4.png" alt="Foto do banheiro">
+            <img src="./assets/imgs/image2.png" alt="Vista da praia">
+        </div>
 
-    </main>
-    <footer>
-
-    </footer>
-
+        <!-- Descrição -->
+        <div class="descricao">
+            <h2>Espaço inteiro: apartamento em Copacabana, Brasil</h2>
+            <p>Studio moderno, ideal para até 3 hóspedes, localizado a 50m da praia. 
+               Perto de restaurantes, bares e supermercados.</p>
+            <ul>
+                <li>1 quarto · 1 cama de casal + 1 sofá-cama</li>
+                <li>1 banheiro completo</li>
+                <li>Cozinha equipada</li>
+                <li>Ar-condicionado e Wi-Fi rápido</li>
+            </ul>
+        </div>
+        <!-- Caixa de reserva -->
+        <div class="reserva-box">
+            <p class="preco"><strong>R$350</strong> / noite</p>
+            <form>
+                <label>Check-in:<br><input type="text" placeholder="Adicionar data"></label><br>
+                <label>Check-out:<br><input type="text" placeholder="Adicionar data"></label><br>
+                <label>Hóspedes:<br><input type="text" placeholder="1 hóspede"></label><br>
+                <button type="button">Conferir disponibilidade</button>
+            </form>
+            <p class="avaliacoes">⭐ 5,0 · 18 avaliações</p>
+        </div>
+    </div>
+</main>
 </body>
 </html>
