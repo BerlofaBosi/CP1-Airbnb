@@ -167,10 +167,15 @@ main {
     grid-column: span 2;
 }
 .conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-direction: column;
     gap: 20px; /* espaço entre galeria e descrição */
 }
-
+.comentarios{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 /* ===================== */
 /* TITULOS */
