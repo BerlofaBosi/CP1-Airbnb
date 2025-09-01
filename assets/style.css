@@ -85,6 +85,11 @@ header {
     padding: 0.40rem;
     padding-left: 0.01rem;
     padding-right: 1.5rem;
+    a:not(last-child)::after{
+      margin: 0 0 0 0.5rem;
+      content: "|";  
+      opacity: 0.3;
+    }
 }
 
 #emojis {
