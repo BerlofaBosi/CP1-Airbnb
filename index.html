@@ -37,19 +37,17 @@
     <div class="título-imovel">
         <h1>Studio Bauhaus (50 metros da praia)</h1>
     </div>
-    <div class="conteudo">
-        <!-- Galeria -->
-        <div class="grid-col-span-3 galeria">
-            <img src="./assets/imgs/princ.png" alt="Foto do quarto principal">
-            <img src="./assets/imgs/image3.png" alt="Foto quarto">
-            <img src="./assets/imgs/image5.png" alt="Foto da cozinha">
-            <img src="./assets/imgs/image4.png" alt="Foto do banheiro">
-            <img src="./assets/imgs/image2.png" alt="Vista da praia">
-        </div>
-
+            <!-- Galeria -->
+            <section class="galeria">
+                <img src="./assets/imgs/princ.png" alt="Foto do quarto principal">
+                <img src="./assets/imgs/image3.png" alt="Foto quarto">
+                <img src="./assets/imgs/image5.png" alt="Foto da cozinha">
+                <img src="./assets/imgs/image4.png" alt="Foto do banheiro">
+                <img src="./assets/imgs/image2.png" alt="Vista da praia">
+            </section>
+    <section class="conteudo">
         <!-- Descrição -->
-        <section class="meiuca">
-            <div class="grid-col-span-2 descricao">
+            <div class="descricao">
                 <h2>Espaço inteiro: apartamento em Copacabana, Brasil</h2>
                 <p>4 hóspedes • Estúdio • 2 camas • 1 banheiro</p>
                 <ul>
@@ -59,7 +57,7 @@
                     <li>Ar-condicionado e Wi-Fi rápido</li>
                 </ul>
             </div>
-            <div class="grid-col-span-2 avaliacoes-box">
+            <div class="avaliacoes-box">
                 <div class="avaliacoesbox2">
                     <img src="./assets/imgs/AsaEsquerda.png" alt="asa-da-direita">
                     <h4>Hóspede favorito</h4>
@@ -74,27 +72,18 @@
                     </div>
                 </div>
             </div> 
-            <!-- Anfitriao -->
-            <div class="anfitriao">
-                <div class="name-pic">
-                    img
-                </div>
-            </div>
-            
-            <!-- Caixa de reserva -->
-            <aside class="grid-rowcol-space reserva-box">
-                <p class="grid-col-span-2 preco"><strong>R$350</strong> / noite</p>
-                <form>
-                    <label>Check-in:<br><input type="text" placeholder="Adicionar data"></label><br>
-                    <label>Check-out:<br><input type="text" placeholder="Adicionar data"></label><br>
-                    <label>Hóspedes:<br><input type="text" placeholder="1 hóspede"></label><br>
-                </form>
-                <button type="button" class="grid-col-span-2">Conferir disponibilidade</button>
-                <p class="avaliacoes">⭐ 5,0 · 18 avaliações</p>
-            </aside>
-        </section>
 
-        <div class="grid-col-span-3 comentarios">
+            <!-- Anfitriao -->
+                <div class="grid-col-span-2 anfitriao">
+                    <div class="pic-profile">
+                        <img src="./assets/imgs/virgilio.png" alt="imagem do anfitrião">
+                        <div class="grid-gcol-span-2 text-coment">
+                            <h4>Anfitrião: Vergílio</h4>
+                            <p></p>                    
+                        </div>
+                </div>
+            <!-- Comentarios -->            
+        <div class="comentarios">
             <div class="coment-1">
                 <div class="pic-profile">
                     <img src="./assets/imgs/jordania.png" alt="jordania" >
@@ -113,10 +102,19 @@
                 <p>14 anos de Airbnb</p>
                 <p>Eu tive uma estadia fantástica! A propriedade era exatamente como descrita: limpa, confortável e bem equipada. O anfitrião foi extremamente receptivo e solidário, tornando tudo suave e sem complicações. A localização é excelente, perto de tudo o que eu precisava. No geral, ótimo custo-benefício. Recomendo!</p>
             </div>
-
-
         </div>
-    </div>
+          <!-- Caixa de reserva -->
+          <aside class="grid-rowcol-space reserva-box">
+            <p class="grid-col-span-2 preco"><strong>R$350</strong> / noite</p>
+            <form>
+                <label>Check-in:<br><input type="text" placeholder="Adicionar data"></label><br>
+                <label>Check-out:<br><input type="text" placeholder="Adicionar data"></label><br>
+                <label>Hóspedes:<br><input type="text" placeholder="1 hóspede"></label><br>
+            </form>
+            <button type="button" class="grid-col-span-2">Conferir disponibilidade</button>
+            <p class="avaliacoes">⭐ 5,0 · 18 avaliações</p>
+        </aside>        
+    </section>
 </main>
 </body>
 </html>

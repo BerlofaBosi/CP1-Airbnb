@@ -156,11 +156,10 @@ main {
     margin-left: 200px;
     margin-right: 200px;
     padding: 20px;
-    display: grid;
-    
 }
 .conteudo {
-  gap: 20px; /* espaço entre galeria e descrição */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 /* ===================== */
@@ -170,7 +169,7 @@ main {
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: repeat(2, 200px);
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .galeria img {
@@ -187,12 +186,7 @@ main {
 }
 
 /* ===================== */
-/* AVALIAÇÕES E RESERVA // MEIUCA */
-.meiuca {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-}
+/* AVALIAÇÕES E RESERVA */
 .avaliacoes-box{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -233,17 +227,17 @@ main {
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     background: #fff;
 }
-.grid-col-span-3{
-    grid-column: span 3;
-    margin-top: 3rem;
-    gap: 2rem;
+.anfitriao{
+  margin-top: 1rem;
+
 }
 
 .pic-profile{
   display: grid;
-  grid-template-columns: repeat(2, 0.16fr);
+  grid-template-columns: 0.2fr 0.2fr;
   align-items: center;
   margin-bottom: 2rem;
+  margin-left: 0px;
   & img{
     height: 4rem;
     width: 4rem;
@@ -256,14 +250,12 @@ main {
     grid-column: span 2;
 }
 .grid-rowcol-space{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column: 2;
 }
 .comentarios{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 /* ===================== */
@@ -288,8 +280,7 @@ h2 {
 /* ===================== */
 /* DESCRIÇÃO E DETALHES */
 .descricao{ 
-    margin-top: 20px;
-    font-size: 15px;
+    font-size: 01rem;
 }
 
 .detalhes ul {
