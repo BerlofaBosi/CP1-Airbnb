@@ -195,7 +195,7 @@ main {
 }
 .avaliacoes-box{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 1.5rem;
@@ -239,7 +239,7 @@ main {
     gap: 2rem;
 }
 
-.jordania{
+.pic-profile{
   display: grid;
   grid-template-columns: repeat(2, 0.16fr);
   align-items: center;
@@ -251,17 +251,6 @@ main {
   }
 }
 
-.Emad{
-  display: grid;
-  grid-template-columns: repeat(2, 0.18fr);
-  align-items: center;
-  margin-bottom: 2rem;
-  & img{
-    height: 4rem;
-    width: 4.5rem;
-    border-radius: 100%;
-  }
-}
 
 .grid-col-span-2{
     grid-column: span 2;
