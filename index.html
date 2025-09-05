@@ -172,9 +172,24 @@
         <aside class="reserva-box">
             <p class="grid-col-span-2 preco"><strong>R$350</strong> / noite</p>
             <form>
-                <label>Check-in:<br><input type="text" placeholder="Adicionar data"></label><br>
-                <label>Check-out:<br><input type="text" placeholder="Adicionar data"></label><br>
-                <label>Hóspedes:<br><input type="text" placeholder="1 hóspede"></label><br>
+                <div class="grid-col-span-2 picker">
+                    <div class="cell">
+                        <label class="label">Check‑in</label>
+                        <input id="checkin" name="checkin" class="input" type="date" />
+                    </div>
+                    <div class="cell">
+                        <label class="label">Check-out</label>
+                        <input id="checkout" name="checkout" class="input" type="date" />
+                    </div>
+                    <div class="grid-col-span-2 cell-row">
+                        <div style="display:flex; flex-direction:column; gap:4px; width:100%;">
+                            <span class="label" id="guestLabel">Hóspedes</span>
+                            <div class="guests-wrap">
+                                <input aria-labelledby="guestLabel" class="input" type="number" inputmode="numeric" min="1" step="1" value="2" name="guests" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
             <button type="button" class="grid-col-span-2">Conferir disponibilidade</button>
             <p class="avaliacoes">⭐ 5,0 · 18 avaliações</p>
