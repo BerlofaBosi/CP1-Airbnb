@@ -1,7 +1,4 @@
 # CP1-Airbnb
-
-[link do site referencia](https://www.airbnb.com.br/rooms/53591773?source_impression_id=p3_1757095406_P3McFPdp5PTH_hPf)
-
 # Projeto Front-End - Clone Airbnb
 
 ## Integrantes
@@ -17,4 +14,8 @@ Trabalho de Front-End que reproduz a página inicial do **Airbnb**, apenas de fo
 - CSS
 
 ## Como visualizar
-Abra o arquivo `index.html` em seu computador ou entre no pages 
+Abra o arquivo `index.html` em seu computador ou entre no link do [git pages](https://berlofabosi.github.io/CP1-Airbnb/)
+
+## Site de referência 
+Para acessar o site utilizado como base para este trabalho, [clique aqui](https://www.airbnb.com.br/rooms/53591773?source_impression_id=p3_1757095406_P3McFPdp5PTH_hPf).
+
